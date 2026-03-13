@@ -10,7 +10,7 @@
 
 ## Overview
 
-This project, developed for the AISO Workshop, is a high-fidelity **Neuro-Symbolic Agentic Framework** designed to handle complex "Deep Research" investigations. Built on the **Google ADK** (Agent Development Kit) and powered by **Gemini 3 Flash**, our agent is engineered to navigate the heterogeneous data environments typical of large-scale criminal investigations—specifically inspired by ML6’s PalmeChat project.
+This project, developed by **Team 4 (SETNU6)** for the **ML6 Case Competition x AISO**, is a high-fidelity **Neuro-Symbolic Agentic Framework** designed to handle complex "Deep Research" investigations. Built on the **Google ADK** (Agent Development Kit) and powered by **Gemini 3 Flash**, our agent is engineered to navigate the heterogeneous data environments typical of large-scale criminal investigations—specifically inspired by ML6’s PalmeChat project.
 
 The system transcends standard LLM chat capabilities by utilizing deterministic tools (`Python`, `SymPy`, `Playwright`, and `Stockfish`) to eliminate hallucinations and ensure **100% evidentiary grounding**.
 
@@ -134,6 +134,8 @@ uv run python evaluate.py --question 16
 
 ## Contributors & Citation
 
-* **Contributors**: Developed during the AISO Workshop 2026.
+* **Team**: SETNU6 (Team 4) – ML6 Case Competition x AISO
+* **Team Lead**: Cagan
+* **Members**: Mark, Pablos, Rutger, Zane
 * **Vision Statement**: Accuracy through validation, not just generation.
 * **Contributing**: See `CONTRIBUTING.md` (coming soon) to submit Pull Requests.

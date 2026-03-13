@@ -106,7 +106,8 @@ def universal_math_solver(math_query: str) -> str:
         # Return a clean number: remove trailing zeros for integers
         if float_val == int(float_val) and "." not in sympy_expr_str:
             return str(int(float_val))
-        return str(float_val)
+        # Use explicit rounding for currency/decimal answers
+        return str(round(float_val, 2))
 
     except ZeroDivisionError:
         return "Error: Division by zero."
@@ -115,6 +116,6 @@ def universal_math_solver(math_query: str) -> str:
         try:
             result = sympify(sympy_expr_str)
             evaluated = result.evalf()
-            return str(float(evaluated))
+            return str(round(float(evaluated), 2))
         except Exception:
             return f"Error evaluating expression '{sympy_expr_str}': {e}"

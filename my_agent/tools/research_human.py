@@ -10,9 +10,11 @@ from playwright.sync_api import sync_playwright
 
 
 def research_human(url: str) -> str:
-    """CRITICAL: Use this tool ONLY if fetch_webpage or web_search fails due
-    to blocks, CAPTCHAs, or legal restrictions. It simulates a human browser
-    session to extract text from difficult sites.
+    """CRITICAL: Use this tool if fetch_webpage or web_search fails due to
+    blocks, CAPTCHAs, or legal restrictions. It simulates a human browser
+    session to extract text from difficult sites. Especially useful for
+    reading Google Books previews, Project MUSE snippets, or any academic
+    site that blocks standard HTTP requests.
 
     Args:
         url: The full URL of the page to read with a simulated browser.
@@ -33,8 +35,8 @@ def research_human(url: str) -> str:
             )
             page = context.new_page()
 
-            # Navigate with a realistic timeout
-            page.goto(url, wait_until="domcontentloaded", timeout=30000)
+            # Navigate and wait for network to settle
+            page.goto(url, wait_until="networkidle", timeout=30000)
 
             # Simulate human-like behavior
             time.sleep(random.uniform(1.0, 2.5))
@@ -53,6 +55,8 @@ def research_human(url: str) -> str:
             # Extract the text content
             text = page.inner_text("body")
 
+            # Clean up resources properly
+            context.close()
             browser.close()
 
             # Truncate to avoid context overflow

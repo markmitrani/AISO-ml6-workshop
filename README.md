@@ -2,7 +2,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Built%20with-Google%20ADK-4285F4?style=for-the-badge&logo=google" alt="Built with Google ADK" />
-  <img src="https://img.shields.io/badge/Engine-Gemini%203%20Flash-FF8C00?style=for-the-badge&logo=googlegemini" alt="Gemini 3 Flash" />
+  <img src="https://img.shields.io/badge/Engine-Gemini%202.5%20Flash-FF8C00?style=for-the-badge&logo=googlegemini" alt="Gemini 2.5 Flash" />
   <img src="https://img.shields.io/badge/Python-3.11%2B-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.11+" />
   <img src="https://img.shields.io/badge/License-MIT-lightgray?style=for-the-badge" alt="License MIT" />
   <img src="https://img.shields.io/badge/Build-Passing-brightgreen?style=for-the-badge" alt="Build Passing" />
@@ -10,7 +10,7 @@
 
 ## Overview
 
-This project, developed by **Team 4 (SETNU6)** for the **ML6 Case Competition x AISO**, is a high-fidelity **Neuro-Symbolic Agentic Framework** designed to handle complex "Deep Research" investigations. Built on the **Google ADK** (Agent Development Kit) and powered by **Gemini 3 Flash**, our agent is engineered to navigate the heterogeneous data environments typical of large-scale criminal investigations—specifically inspired by ML6’s PalmeChat project.
+This project, developed by **Team 4 (SETNU6)** for the **ML6 Case Competition x AISO**, is a high-fidelity **Neuro-Symbolic Agentic Framework** designed to handle complex "Deep Research" investigations. Built on the **Google ADK** (Agent Development Kit) and powered by **Gemini 2.5 Flash**, our agent is engineered to navigate the heterogeneous data environments typical of large-scale criminal investigations—specifically inspired by ML6’s PalmeChat project.
 
 The system transcends standard LLM chat capabilities by utilizing deterministic tools (`Python`, `SymPy`, `Playwright`, and `Stockfish`) to eliminate hallucinations and ensure **100% evidentiary grounding**.
 
@@ -28,7 +28,7 @@ The system transcends standard LLM chat capabilities by utilizing deterministic 
 
 | Capability Domain | Score | Primary Tool Stack |
 |-------------------|-------|--------------------|
-| **Core LLM Logic & Routing** | 🟢 100% (3/3) | Native Gemini 3 Flash Routing |
+| **Core LLM Logic & Routing** | 🟢 100% (3/3) | Native Gemini 2.5 Flash Routing |
 | **Math & Financial Precision** | 🟢 100% (3/3) | Sandboxed `SymPy` Orchestration |
 | **Local Structured Context** | 🟢 100% (3/3) | `pdfplumber` Layout-Aware Parser |
 | **Complex Web Research** | 🟢 100% (4/4) | `Playwright` Human-Sim & Jina Reader |
@@ -42,7 +42,7 @@ Our agent follows a **Router-Validator** architecture prioritizing validation ov
 
 ```mermaid
 graph TD
-    A[Input Query] --> B{Orchestrator: Gemini 3 Flash}
+    A[Input Query] --> B{Orchestrator: Gemini 2.5 Flash}
     B -->|Linguistic Task| C[Direct Response]
     B -->|Complex Intent| D[Consensus Engine]
     D --> E[Deterministic Tool: SymPy / Python]
@@ -53,7 +53,7 @@ graph TD
 
 ### Components
 
-* **Orchestrator (Gemini 3 Flash)**: Handles intent routing, surgical search query formulation, and multi-modal reasoning.
+* **Orchestrator (Gemini 2.5 Flash)**: Handles intent routing, surgical search query formulation, and multi-modal reasoning.
 * **Deterministic Hands**:
   * **Math**: `SymPy`-based sandboxed execution for financial and spatial precision.
   * **Documents**: Layout-aware extraction using `pdfplumber` and `PyMuPDF`.

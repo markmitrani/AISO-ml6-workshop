@@ -24,6 +24,16 @@ The system transcends standard LLM chat capabilities by utilizing deterministic 
 | **Efficiency** | **>60% reduction** | Reduction in reasoning steps via deterministic offloading |
 | **Token Optimization** | **80% reduction** | Context window usage reduced for dense PDF data via Local Markdown Buffering |
 
+### Benchmark Breakdown (16/16 Passed)
+
+| Capability Domain | Score | Primary Tool Stack |
+|-------------------|-------|--------------------|
+| **Core LLM Logic & Routing** | 🟢 100% (3/3) | Native Gemini 3 Flash Routing |
+| **Math & Financial Precision** | 🟢 100% (3/3) | Sandboxed `SymPy` Orchestration |
+| **Local Structured Context** | 🟢 100% (3/3) | `pdfplumber` Layout-Aware Parser |
+| **Complex Web Research** | 🟢 100% (4/4) | `Playwright` Human-Sim & Jina Reader |
+| **Multimodal Vision & Consensus**| 🟢 100% (3/3) | Gemini 2.5 Pro Vision + `Stockfish` |
+
 ---
 
 ## Architecture: The "Consensus Engine"

@@ -85,6 +85,34 @@
             "question": "Review the chess position provided in the image. It is black's turn. Provide the correct next move for black which guarantees a win. Please provide your response in algebraic notation.",
             "answer": "Rd5",
             "file_name": "16.png"
+        },
+        {
+            "id": 17,
+            "question": "Review 'inv2.pdf' and 'inv3.pdf'. Find the exact amount of scholarship money (in SEK) that Richard Lindberg applied for in inv2. Add that number to the estimated total number of workplace representatives mentioned by Birger Elm\u00e9r in inv3. Give only the final numerical sum.",
+            "answer": "25000",
+            "file_name": "inv2.pdf, inv3.pdf"
+        },
+        {
+            "id": 18,
+            "question": "Cross-reference 'inv2.pdf' and 'inv3.pdf'. What is the last name of the South African IPA contact (first name Dossie) mentioned in inv2, and what is the last name of the former head of IB interviewed in inv3? Format your answer exactly like this: [Lastname1], [Lastname2]",
+            "answer": "Engelbrecht, Elm\u00e9r",
+            "file_name": "inv2.pdf, inv3.pdf"
+        },
+        {
+            "id": 19,
+            "question": "Find the name of the specific fund Richard Lindberg applied to in 'inv2.pdf'. Then, use the web to find the exact year Olof Palme was assassinated. Combine the year and the fund name in this exact format: [Year] - [Fund Name].",
+            "answer": "1986 - C.G. Westerdahls stipendiefond",
+            "file_name": "inv2.pdf"
+        },
+        {
+            "id": 20,
+            "question": "Based on the document at https://www.archives.gov/research/jfk/warren-commission-report/appendix-12.html, who killed JFK?",
+            "answer": "Lee Harvey Oswald"
+        },
+        {
+            "id": 21,
+            "question": "Based on the document at https://www.archives.gov/research/jfk/warren-commission-report/chapter-3.html, how was JFK killed?",
+            "answer": "Shot by rifle fire from the Texas School Book Depository"
         }
     ]
 }

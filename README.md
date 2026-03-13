@@ -10,7 +10,7 @@
 
 ## Overview
 
-This project, developed by **Team 4 (SETNU6)** for the **ML6 Case Competition x AISO**, is a high-fidelity **Neuro-Symbolic Agentic Framework** designed to handle complex "Deep Research" investigations. Built on the **Google ADK** (Agent Development Kit) and powered by **Gemini 2.5 Flash**, our agent is engineered to navigate the heterogeneous data environments typical of large-scale criminal investigations—specifically inspired by ML6’s PalmeChat project.
+This project, developed by **Team 4 (SETNU6)** for the **ML6 Case Competition x AISO**, is a high-fidelity **Neuro-Symbolic Agentic Framework** designed to handle complex "Deep Research" investigations. Built on the **Google ADK** (Agent Development Kit) and powered by **Gemini 2.5 Flash**, our agent is engineered to navigate the heterogeneous data environments typical of large-scale criminal investigations—architected to empower initiatives like **ML6's PalmeNet-Chat Project on the Olof Palme Investigation** and help them succeed at scale.
 
 The system transcends standard LLM chat capabilities by utilizing deterministic tools (`Python`, `SymPy`, `Playwright`, and `Stockfish`) to eliminate hallucinations and ensure **100% evidentiary grounding**.
 
@@ -135,10 +135,10 @@ uv run python evaluate.py --question 16
 
 ---
 
-## Enterprise Case Study: PalmeChat Alignment
+## Enterprise Case Study: ML6 PalmeNet-Chat Alignment
 
 > **Alignment Note**
-> We aligned our architecture with ML6’s PalmeChat project. Our agent is designed to help investigators interrogate massive archives—like the 250 meters of Olof Palme assassination files. Our Consensus Engine and Human-Simulation failbacks directly solve the real-world need to reconstruct criminal timelines and evidence chains with surgical precision and transparent reasoning.
+> We designed our architecture to align with and elevate ML6's **PalmeNet-Chat Project on the Olof Palme Investigation**. Our agent is specifically engineered to help investigators successfully interrogate massive, unstructured archives—such as the 250 meters of physical Olof Palme assassination files. By bridging the gap between generative inference and deterministic validation, our Consensus Engine and Human-Simulation failbacks are built to help ML6 succeed in reconstructing criminal timelines and complex evidence chains with surgical precision and fully transparent, halluciation-free reasoning.
 
 ---
 
